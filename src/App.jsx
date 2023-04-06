@@ -1,12 +1,25 @@
 import { useState } from "react";
 import styles from "./style";
 import "./App.css";
-
+import {
+  Navbar,
+  Hero,
+  Stats,
+  CTA,
+  Testimonials,
+  Footer,
+  Billing,
+  CardDeal,
+  Business,
+  Clients,
+} from "./components";
 function App() {
   return (
     <div className="bg-primary w-full overflow-hidden ">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth} text-white`}>Navbar</div>
+        <div className={`${styles.boxWidth} text-white`}>
+          <Navbar />
+        </div>
       </div>
 
       <div className={`bg-primary ${styles.flexStart}`}>
@@ -14,8 +27,15 @@ function App() {
       </div>
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          Stats Business Billing CardDeal Testmonials Clients CTA Footer
+        <div className={`${styles.boxWidth} text-white`}>
+          <Stats />
+          <Business />
+          <Billing />
+          <CardDeal />
+          <Testimonials />
+          <Clients />
+          <CTA />
+          <Footer />
         </div>
       </div>
     </div>
