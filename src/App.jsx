@@ -1,12 +1,23 @@
 import { useState } from "react";
+import styles from "./style";
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline text-blue-600">
-        Hello world!
-      </h1>
+    <div className="bg-primary w-full overflow-hidden ">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth} text-white`}>Navbar</div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>Hero</div>
+      </div>
+
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          Stats Business Billing CardDeal Testmonials Clients CTA Footer
+        </div>
+      </div>
     </div>
   );
 }
