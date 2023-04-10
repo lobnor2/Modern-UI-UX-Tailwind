@@ -24,7 +24,7 @@ function App() {
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth} text-white border border-white`}>
-          Hero
+          <Hero />
         </div>
       </div>
 
