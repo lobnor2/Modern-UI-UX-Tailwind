@@ -10,7 +10,7 @@ const Hero = () => {
     >
       {/* left side */}
       <div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 border border-white`}
+        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 `}
       >
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex flex-row justify-between items-center w-full border border-white">
+        <div className="flex flex-row justify-between items-center w-full ">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100px] leading-[75px]">
             The Next <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Generation</span> <br />
@@ -30,12 +30,10 @@ const Hero = () => {
             <GetStarted />
           </div>
         </div>
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[55px] ss:leading-[100px] leading-[75px] w-full border border-white mt-1">
+        <h1 className="font-poppins font-semibold ss:text-[68px] text-[55px] ss:leading-[100px] leading-[75px] w-full  mt-1">
           Payment Method.
         </h1>
-        <p
-          className={`${styles.paragraph} max-w-[470px] mt-5 border border-white`}
-        >
+        <p className={`${styles.paragraph} max-w-[470px] mt-5 `}>
           Our team of experts uses a methodology to identitfy the credit cards
           most likely to fit yor needs. We examine annual percentage rated,
           annual fees.
@@ -43,7 +41,7 @@ const Hero = () => {
       </div>
       {/* right side */}
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative  border border-white`}
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative  `}
       >
         <img
           src={robot}

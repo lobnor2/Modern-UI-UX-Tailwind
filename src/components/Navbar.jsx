@@ -5,7 +5,7 @@ import { navLinks } from "../constants";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full flex py-6 justify-between items-center border border-white my-1">
+    <nav className="w-full flex py-6 justify-between items-center my-1">
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
       {/* dont show list on mobile view */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 ">
